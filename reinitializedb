@@ -1,0 +1,11 @@
+#!/bin/sh
+# reset (emtpy) db
+php ./artisan migrate:reset
+
+# create users db
+php ./artisan migrate
+
+# add testdata
+php ./artisan db:seed
+
+#test
